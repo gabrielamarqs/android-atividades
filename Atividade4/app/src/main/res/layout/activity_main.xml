@@ -1,83 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    android:layout_margin="16dp"
     android:orientation="vertical"
-    android:layout_margin="16dp">
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/txtEscrita"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_margin="16dp"
-        android:gravity="center"/>
+        android:gravity="center" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/texto"/>
+            android:layout_weight="3"
+            android:text="@string/texto" />
 
         <EditText
             android:id="@+id/edtTexto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textCapCharacters"/>
+            android:layout_weight="1"
+            android:inputType="text" />
+
+
+        <ImageButton
+            android:id="@+id/btnExibir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            tools:src="@android:drawable/ic_menu_upload" />
     </LinearLayout>
 
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/tamFonte"/>
+        android:text="@string/tamFonte" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <SeekBar
             android:id="@+id/skbTamanho"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:max="80"/>
-<!--        <TextView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="@string/tamFonteDP"/>-->
+            android:max="80" />
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="@string/tamFonteDP"/>-->
     </LinearLayout>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/estilo"/>
+        android:text="@string/estilo" />
 
     <CheckBox
         android:id="@+id/chkNegrito"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/negrito"/>
+        android:text="@string/negrito" />
+
     <CheckBox
         android:id="@+id/chkItalico"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/italico"/>
+        android:text="@string/italico" />
+
     <CheckBox
         android:id="@+id/chkMaiuscula"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/maiuscula"/>
+        android:text="@string/maiuscula" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/cor"/>
+        android:text="@string/cor" />
 
 
     <RadioGroup
@@ -85,24 +99,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <RadioButton
             android:id="@+id/rdbVerde"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/verde"/>
+            android:text="@string/verde" />
+
         <RadioButton
             android:id="@+id/rdbVerm"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/vermelho"/>
+            android:text="@string/vermelho" />
+
         <RadioButton
             android:id="@+id/rdbAzul"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/azul"/>
+            android:text="@string/azul" />
     </RadioGroup>
 
 
